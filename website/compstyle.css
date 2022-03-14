@@ -193,10 +193,10 @@ html {
   }
   
   .imageNav-photo {
-    width: 140px;
+    width: 50px;
   
     /* Box-model */
-    height: 140px;
+    height: 100px;
   }
   
   .imageNav-photo:hover {
@@ -269,12 +269,8 @@ html {
     /* Visual */
     background-color: #4aaaa5;
   }
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    size: 100
-  }
+  
+ 
   
   /* ----FOOTER END---- */
   
