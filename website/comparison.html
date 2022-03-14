@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bootstrap Visualization Dashboard</title>
     <link rel="stylesheet" href="bootstrap.min.css" media="screen">
-    <link rel="stylesheet" href="styles.css" media="screen">
+    <link rel="stylesheet" href="compstyle.css" media="screen">
   </head>
   <body>
     <nav class="navbar navbar-default">
+      <div class="navbar-header"></div>
       <div class="container-fluid navbar-custom">
         <div class="row">
           <div class="navbar-header">
@@ -20,7 +21,7 @@
               <span class="icon-bar"></span>
             </button>
             <div class="col-xs-9 phone-nav">
-              <a class="navbar-brand" href="index.html" id="logo">Latitude</a>
+              <a class="navbar-brand" href="#" id="logo">Latitude</a>
             </div>
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -55,31 +56,33 @@
 
     <div class="container">
       <section class="row">
-        <div class="col-md-8">
+        <div class="col-md-12">
           <article class="description-content">
-            <h1 class="description-header"> Summary: Latitude vs X</h1>
+            <h1 class="description-header"> Comparison: Latitude vs. X</h1>
             <hr class="description-hr"/>
-            <img src="images/fig1.png" id="description-image" alt="weather chart">
+            
             <p>
-              This project aimed to analyze how weather changes as you get closer to the equator. We first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities to accomplish this analysis.
+              Click any plot to get an in depth analysis.
             </p>
-
-            <p>
-              After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis and explanations and descriptions of any trends and correlations witnessed. 
-            </p>
-          </article>
-        </div>
-        <div class="col-md-4">
-          <section class="imageNav-area">
-            <div class="imageNav-content">
-              <h2>Visualizations</h2>
-              <hr/>
-              <div>
-                <a href="Temperature.html"> <img src="images/Fig1.png" alt="Latitude vs Temperature" class="imageNav-photo"></a>
-                <a href="Humidity.html"> <img src="images/Fig2.png" alt="Latitude vs Humidity" class="imageNav-photo"></a>
-                <a href="Cloudiness.html"> <img src="images/Fig3.png" alt="Latitude vs Cloudiness" class="imageNav-photo"></a>
-                <a href="WindSpeed.html"> <img src="images/Fig4.png" alt="Latitude vs Wind Wind Speed" class="imageNav-photo"></a>
+            <div>
+              <div class="jumbotron jumbotron-fluid">
+                <div class="col-md-8">
+                  <section class="imageNav-area">
+                    <div class="imageNav-content">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-8">
+              <a href="Temperature.html"> <img src="images/Fig1.png" alt="Latitude vs Temperature" class="img-responsive"></a>
+              <a href="Humidity.html"> <img src="images/Fig2.png" alt="Latitude vs Humidity" class="img-responsive"></a>
+              <a href="Cloudiness.html"> <img src="images/Fig3.png" alt="Latitude vs Cloudiness" class="img-responsive"></a>
+              <a href="WindSpeed.html"> <img src="images/Fig4.png" alt="Latitude vs Wind Wind Speed" class="img-responsive"></a>
+               </div>
               </div>
+            </div>
+          </article>
+       
+              <hr/>
+              
             </div>
             
           </section>
