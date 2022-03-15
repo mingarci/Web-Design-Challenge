@@ -10,7 +10,8 @@ html {
   body {
     /* Positioning */
     margin-bottom: 150px;
-  
+    
+      }
     /* Typography */
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   
@@ -112,6 +113,7 @@ html {
   .description-header {
     /* Positioning */
     margin-bottom: 33px;
+    margin-top:3vh;
     font-family: Georgia, Times, "Times New Roman", serif;
   
     /* Typography */
