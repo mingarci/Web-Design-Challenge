@@ -32,8 +32,12 @@ html {
   /* ----NAV START---- */
   .navbar-custom {
     background-color: #fff;
+    
   }
-  
+  .navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+  }
   #logo {
     /* Box-model */
     height: 60px;
