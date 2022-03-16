@@ -14,7 +14,7 @@ html {
       }
     /* Typography */
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  
+    
     /* Visual */
     background-color: #ededed;
   }
@@ -53,7 +53,8 @@ html {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
-  
+  /* Typography */
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     /* Visual */
     background: #4aaaa5;
   }
@@ -101,7 +102,8 @@ html {
       font-size: 24px;
       font-weight: bold;
       color: #fff;
-  
+  /* Typography */
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
       /* Visual */
       background: #4aaaa5;
     }
@@ -112,14 +114,14 @@ html {
   /* ----DESCRIPTION START---- */
   .description-header {
     /* Positioning */
-    margin-bottom: 33px;
+    margin-bottom: 30px;
     margin-top:3vh;
     font-family: Georgia, Times, "Times New Roman", serif;
   
     /* Typography */
-    font-size: 32px;
+    font-size: 38px;
     font-weight: bold;
-    color: #4aaaa5;
+    color: #565a5a;
   }
   
   .description-content {
@@ -221,6 +223,7 @@ html {
   
     /* Typography */
     text-align: center;
+    
   }
   
   /* ----IMAGE NAV END---- */
@@ -233,7 +236,8 @@ html {
   .comparison-header {
     /* Positioning */
     margin-bottom: 10px;
-    font-family: Georgia, Times, "Times New Roman", serif;
+    /* Typography */
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   
     /* Typography */
     font-size: 20px;
@@ -276,7 +280,10 @@ html {
     background-color: #4aaaa5;
   }
   
-  
+  h2{ 
+     /* Typography */
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;   
+  }
   
   /* ----FOOTER END---- */
   
