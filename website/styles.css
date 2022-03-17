@@ -214,7 +214,7 @@ body {
   padding-top: 15px;
 
   /* Typography */
-  text-align: center;
+  text-align: absolute;
 }
 
 /* ----IMAGE NAV END---- */
