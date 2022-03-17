@@ -31,7 +31,7 @@ body {
 
 /* ----NAV START---- */
 .navbar-custom {
-  background-color: rgb(49, 46, 46);
+  background-color: rgb(41, 37, 37)
 }
 
 #logo {
@@ -42,7 +42,7 @@ body {
 
   /* Positioning */
   margin-left: 70px;
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: Arial, Helvetica, sans-serif, Times, "Times New Roman", serif;
 
   /* Typography */
   font-size: 24px;
@@ -50,7 +50,7 @@ body {
   color: #fff;
 
   /* Visual */
-  background: rgb(49, 46, 46);
+  background: rgb(41, 37, 37);
 }
 
 /* Logo hover state */
@@ -90,7 +90,7 @@ body {
 
     /* Positioning */
     margin-left: 0;
-    font-family: Georgia, Times, "Times New Roman", serif;
+    font-family: Arial, Helvetica, sans-serif, Times, "Times New Roman", serif;
 
     /* Typography */
     font-size: 24px;
@@ -108,7 +108,7 @@ body {
 .description-header {
   /* Positioning */
   margin-bottom: 33px;
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: Arial, Helvetica, sans-serif, Times, "Times New Roman", serif;
 
   /* Typography */
   font-size: 32px;
@@ -250,7 +250,7 @@ body {
   margin-top: 30px;
 
   /* Visual */
-  background-color: #666;
+  background-color: rgb(240, 212, 212);
 }
 
 .text-muted-footer {

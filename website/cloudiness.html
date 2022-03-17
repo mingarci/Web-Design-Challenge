@@ -1,32 +1,34 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bootstrap Visualization Dashboard</title>
-    <link rel="stylesheet" href="bootstrap.min.css" media="screen">
-    <link rel="stylesheet" href="styles.css" media="screen">
-  </head>
-  <body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid navbar-custom">
-        <div class="row">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle Navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <div class="col-xs-9 phone-nav">
-              <a class="navbar-brand" href="index.html" id="logo">Latitude</a>
-            </div>
-          </div>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right navbar-right-custom">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="compstyle.css">
+    <title>Data</title>
+</head>
+<body>
+
+    <! -- Navbar {-sm|-md|-lg|-xl} for responsive collapsing -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+      <a href="index.html" class="navbar-brand">Latitude</a>
+  
+      <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navmenu"
+      >
+      <span class="navbar-toggler-icon"></span>
+      </button>    
+  
+      <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                <a class="nav-link dropdown-toggle" <a href="javascript:void(0)" data-bs-toggle="dropdown">Plots</a>
                 <ul class="dropdown-menu">
                   <li><a href="temperature.html">Max Temperature</a></li>
                   <li><a href="humidity.html">Humidity</a></li>
@@ -34,13 +36,16 @@
                   <li><a href="windspeed.html">Wind Speed</a></li>
                 </ul>
               </li>
-              <li><a href="comparison.html">Comparison</a></li>
-              <li><a href="data.html">Data</a></li>
-            </ul>
-          </div>
+              <li class="nav-item">
+                  <a href="comparison.html" class="nav-link">Comparison</a> 
+               </li>
+               <li class="nav-item">
+                  <a href="data.html" class="nav-link">Data</a> 
+               </li>
+          </ul>
+         </div>
         </div>
-      </div>
-    </nav> 
+    </nav>
 
 
 
@@ -53,48 +58,40 @@
 
   <!-- Showcase -->
 
-    <div class="container">
-      <section class="row">
-        <div class="col-md-8">
-          <article class="description-content">
-            <h1 class="description-header"> vs. Cloudiness</h1>
-            <hr class="description-hr"/>
-            <img src="images/fig1.png" id="description-image" alt="weather chart">
-            <p>
-              
-            </p>
+  <div class="container">
+    <section class="row">
+      <div class="col">
+        <article class="description-content">
+          <h1 class="description-header"> Cloudiness</h1>
+          <hr class="description-hr"/>
+          
+          <p>
+            This graph illustrates the correlation between latitude and cloudiness. At first glance, there does not seem to be a strong correlation between cloudiness and latitude. There seem to be certain latitudes with a concentration of cities with either many clouds or no cloud cover. For example, on this day, there seemed to be a cluster of cities with little to no cloud coverage from just under 10 degrees latitude to 70 degrees latitude. There is a similar cluster from -10 degrees to -40 degrees latitude.
+            <br>
+            <br>
+            <div class="container"> 
+              <div class="row"> 
+                 <div class="col-md-12"></href=><figcaption class="figure-caption text-center">vs Cloudiness</figcaption><a href="temperature.html"><img src="images/Fig3.png" alt="Latitude vs Temperature" class="w-100"></a></div>
+                 
+              </div> 
+           </div>
 
-            <p>
               
-            </p>
-          </article>
-        </div>
-        <div class="col-md-4">
-          <section class="imageNav-area">
-            <div class="imageNav-content">
-              <h2>Visualizations</h2>
-              <hr/>
-              <div>
-                <a href="Temperature.html"> <img src="images/Fig1.png" alt="Latitude vs Temperature" class="imageNav-photo"></a>
-                <a href="Humidity.html"> <img src="images/Fig2.png" alt="Latitude vs Humidity" class="imageNav-photo"></a>
-                <a href="Cloudiness.html"> <img src="images/Fig3.png" alt="Latitude vs Cloudiness" class="imageNav-photo"></a>
-                <a href="WindSpeed.html"> <img src="images/Fig4.png" alt="Latitude vs Wind Wind Speed" class="imageNav-photo"></a>
-              </div>
-            </div>
+        </article>
+     
+            <hr/>
             
-          </section>
+          </div>
+          
+        </section>
 
-        </div>
-      </section>
+      </div>
+    </section>
 
 
-    </div>
-  
+  </div>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-  </body>
-</html>
-  
-  
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"
+    
+  ></script>
